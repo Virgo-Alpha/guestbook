@@ -20,6 +20,8 @@ router.get("/about", function (req, res) {
   res.redirect("/about.html");
 });
 
+router.get('/peter', controller.peters_entries);
+
 router.use(function (req, res) {
   res.status(404);
   res.type("text/plain");
